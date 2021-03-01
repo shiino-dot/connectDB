@@ -1,0 +1,10 @@
+{
+  "name": "connect",
+  "version": "1.0",
+  "description": "",
+  "scripts" : {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "author": ""
+}
