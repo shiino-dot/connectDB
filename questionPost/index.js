@@ -14,7 +14,7 @@ module.exports = function (context, req) {
       status: 200,
       body: "success"
     };
-  } else {
+  } else { 
     context.res = {
       status: 400,
       body: "miss"

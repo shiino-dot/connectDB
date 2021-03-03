@@ -6,22 +6,15 @@
       "direction": "in",
       "name": "req",
       "methods": [
+        "get",
         "delete"
-      ]
+      ],
+      "route": "delete/"
     },
     {
       "type": "http",
       "direction": "out",
       "name": "res"
-    },
-    {
-      "name": "inputDocument",
-      "type": "cosmosDB",
-      "databaseName": "qandaDB",
-      "collectionName": "answers",
-      "connectionStringSetting": "cosmosdbConnectionStr",
-      "direction": "in",
-      "sqlQuery": "select * from c where c.id={id}"
     }
   ],
   "disabled": false

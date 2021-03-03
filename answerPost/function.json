@@ -6,6 +6,7 @@
       "direction": "in",
       "name": "req",
       "methods": [
+        "get",
         "post"
       ],
       "route": "answer/"
@@ -16,7 +17,7 @@
       "name": "res"
     },
     {
-      "name": "answerDocument",
+      "name": "outputDocument",
       "type": "cosmosDB",
       "databaseName": "qandaDB",
       "collectionName": "answers",
