@@ -9,7 +9,7 @@
         "get",
         "post"
       ],
-      "route": "answer/"
+      "route": "post/"
     },
     {
       "type": "http",
@@ -21,6 +21,16 @@
       "type": "cosmosDB",
       "databaseName": "qandaDB",
       "collectionName": "answers",
+      "createIfNotExists": true,
+      "connectionStringSetting": "cosmosdbConnectionStr",
+      "direction": "out",
+      "partitionKey": "/id"
+    },
+    {
+      "name": "outputquestions",
+      "type": "cosmosDB",
+      "databaseName": "qandaDB",
+      "collectionName": "questions",
       "createIfNotExists": true,
       "connectionStringSetting": "cosmosdbConnectionStr",
       "direction": "out",

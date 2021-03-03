@@ -6,10 +6,8 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "get",
         "delete"
-      ],
-      "route": "delete/"
+      ]
     },
     {
       "type": "http",
