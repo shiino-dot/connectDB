@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ],
+      "route": "answer/"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "answerDocument",
+      "type": "cosmosDB",
+      "databaseName": "qandaDB",
+      "collectionName": "answers",
+      "createIfNotExists": true,
+      "connectionStringSetting": "cosmosdbConnectionStr",
+      "direction": "out",
+      "partitionKey": "/id"
+    }
+  ],
+  "disabled": false
+}
