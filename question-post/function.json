@@ -9,7 +9,7 @@
         "get",
         "post"
       ],
-      "route": "question/"
+      "route": "question/post"
     },
     {
       "type": "http",
